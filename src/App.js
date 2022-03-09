@@ -25,7 +25,7 @@ function App() {
       <footer>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/mah752/maryan-s-first-react-app"
           target="_blank"
           rel="noopener noreferrer"
         >
