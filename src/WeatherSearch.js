@@ -4,7 +4,7 @@ import DaysForecast from "./DaysForecast";
 
 const apiKey = "b4ff976d0b6bf19c30785d422350f066";
 
-export default function WeatherForecast(props) {
+export default function WeatherSearch(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 

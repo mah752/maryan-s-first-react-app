@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./App.css";
-import WeatherInfo from "./Weatherinfo";
+import Weather from "./Weather";
 //import CurrentLocation from "./CurrentLocation";
 import lottie from "lottie-web";
 
@@ -21,7 +21,7 @@ function App() {
       <header>
         <h1>What is the weather today?</h1>
       </header>{" "}
-      <WeatherInfo />
+      <Weather defaultcity="London" />
       <div className="container" ref={container}></div>
       <footer>
         <a
