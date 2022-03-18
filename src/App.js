@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./App.css";
 import WeatherInfo from "./Weatherinfo";
 //import CurrentLocation from "./CurrentLocation";
@@ -22,8 +22,7 @@ function App() {
         <h1>What is the weather today?</h1>
       </header>{" "}
       <WeatherInfo />
-      <div className="container" ref={container}>
-        </div> 
+      <div className="container" ref={container}></div>
       <footer>
         <a
           className="App-link"
