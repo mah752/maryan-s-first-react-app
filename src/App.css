@@ -6,12 +6,13 @@
     padding: 5px;
     margin: 120px;
     background: linear-gradient( 103.3deg, rgb(190, 11, 215) -18.7%, rgb(246, 234, 11) 90.9%);
-    width: 100vh;
+    width: 400px;
+    height: 900px;
     display: block;
 }
 
 .App-header {
-    min-height: 100vh;
+    min-height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +25,8 @@
 }
 
 .container {
-    width: 100vh;
+    width: 300px;
     margin: auto;
     display: block;
+    height: 700px;
 }
