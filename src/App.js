@@ -21,9 +21,9 @@ function App() {
       <header>
         <h1>What is the weather today?</h1>
       </header>{" "}
-      <Weather defaultcity="London" />
       <div className="container" ref={container}></div>
-      <footer>
+       <Weather defaultCity="London" />
+       <footer>
         <a
           className="App-link"
           href="https://github.com/mah752/maryan-s-first-react-app"
