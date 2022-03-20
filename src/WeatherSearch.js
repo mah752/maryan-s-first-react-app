@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DaysForecast from "./DaysForecast";
+import "./WeatherSearch.css"
 
-const apiKey = "b4ff976d0b6bf19c30785d422350f066";
+const apiKey = "97d92d345b5dee4adf0c3f606a085e3e";
 
 export default function WeatherSearch(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
-
-  useEffect(() => {
-    setLoaded(false);
-  }, [props.coordinates]);
-
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
+
+
 
   if (loaded) {
     return (
