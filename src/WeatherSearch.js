@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DaysForecast from "./DaysForecast";
-import "./WeatherSearch.css"
+import "./WeatherSearch.css";
 
 const apiKey = "97d92d345b5dee4adf0c3f606a085e3e";
 
@@ -15,8 +15,6 @@ export default function WeatherSearch(props) {
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);
-
-
 
   if (loaded) {
     return (

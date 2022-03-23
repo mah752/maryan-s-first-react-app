@@ -1,35 +1,31 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import IconWeather from "./IconWeather";
+import WeatherTemp from "./temp";
 
-export default function WeatherInfo(props) {
+//import "./Weatherinfo.css";
+import FormattedDate from "./FormattedDate";
+
+export default function Weather(props) {
   return (
-    <div>
-      <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          <FormattedDate date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
-      <div className="row mt-1">
-        <div className="col-6">
-          <div className="clearfix">
-            <span className="float-start">
-              <IconWeather code={props.data.icon} />
-            </span>
-            <span className="float-start">
-              <span className="temperature">
-                {Math.round(props.data.temperature)}
-              </span>
-              <span className="unit">°F</span>
-            </span>
-          </div>
+    <div className="Weather">
+      <div className="row">
+        <div className="col-6 icon-image">
+          <IconWeather codeIcon={props.data.icon} size={130} />
         </div>
-        <div className="description col-6">
+        <div className="col-6">
+          <h1 className="city-name">{props.data.cityname}</h1>
+          <WeatherTemp temperature={props.data.temperature} />
+
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind} mph</li>
+            <li>
+              <FormattedDate date={props.data.date} /> ,
+              <span className="description"> {props.data.description}</span>
+            </li>
+            <li>
+              Humidity: <span className="humidity">{props.data.humidity}%</span>{" "}
+              , Wind:
+              <span className="wind">{Math.round(props.data.wind)} km/h</span>
+            </li>
           </ul>
         </div>
       </div>
