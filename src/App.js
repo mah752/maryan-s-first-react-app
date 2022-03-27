@@ -6,12 +6,12 @@ import Animation from "./animation";
 export default function App() {
   return (
     <div className="App">
+      <div className="app-container"> 
       <header>
         <h1>What is the weather today?</h1>
-      </header>{" "}
-      <div className="container">
-        <Animation />
-        <Weather City="Birmingham" />
+        <Animation/>
+      </header>
+        <Weather defaultCity="Birmingham" />
         <footer>
           <a
             className="App-link"
@@ -24,5 +24,6 @@ export default function App() {
         </footer>
       </div>
     </div>
+   
   );
 }

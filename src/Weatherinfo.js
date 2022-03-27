@@ -7,7 +7,7 @@ import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   return (
-    <div className="Weather">
+    <div className="weather">
       <div className="row">
         <div className="col-6 icon-image">
           <IconWeather codeIcon={props.data.icon} size={130} />
