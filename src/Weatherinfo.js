@@ -18,12 +18,16 @@ export default function Weather(props) {
 
           <ul>
             <li>
-              <FormattedDate date={props.data.date} /> ,
+              <FormattedDate date={props.data.date} />
+              </li>
+              <li>
               <span className="description"> {props.data.description}</span>
             </li>
             <li>
               Humidity: <span className="humidity">{props.data.humidity}%</span>{" "}
-              , Wind:
+            </li>
+            <li>
+              Wind:
               <span className="wind">{Math.round(props.data.wind)} km/h</span>
             </li>
           </ul>
