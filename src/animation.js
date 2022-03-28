@@ -11,7 +11,7 @@ useEffect(() => {
     renderer: "svg",
     loop: true,
     autoplay: true,
-    animationData: require("./walk.json"),
+    animationData: require("./dance.json"),
   });
 }, []);
 

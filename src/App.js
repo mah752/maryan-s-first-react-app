@@ -9,7 +9,9 @@ export default function App() {
       <div className="app-container">
         <header>
           <h1>What is the weather today?</h1>
-          <Animation />
+          <div className="animation-container"> 
+          <Animation /> <Animation/> <Animation/>
+          </div>
         </header>
         <Weather defaultCity="London" />
         <footer>
