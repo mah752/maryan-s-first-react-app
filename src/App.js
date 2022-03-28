@@ -22,7 +22,7 @@ export default function App() {
             rel="noopener noreferrer"
           >
             Coded by Maryan Hussein{" "}
-          </a>
+          </a> <p> Thanks to ReactAnimatedWeather and Lottie Animations</p>
         </footer>
       </div>
     </div>
