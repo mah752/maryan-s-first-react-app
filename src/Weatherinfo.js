@@ -5,7 +5,7 @@ import WeatherTemp from "./temp";
 //import "./Weatherinfo.css";
 import FormattedDate from "./FormattedDate";
 
-export default function WeatherInfo(props) {
+export default function Weatherinfo(props) {
   return (
     <div className="weather">
       <div className="row">
