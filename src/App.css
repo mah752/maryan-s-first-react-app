@@ -1,5 +1,5 @@
         .App {
-            max-width: 700px;
+            max-width: 800px;
             margin: 50px auto;
             background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
             border-radius: 25px;
@@ -23,9 +23,10 @@
         
         .App h1 {
             text-align: center;
-            font-size: 30px;
+            font-size: 35px;
             margin-top: 10px;
-            color: #F43E65;
+            color: #FA02F6;
+            font-weight: bold;
         }
         
         .App footer {
