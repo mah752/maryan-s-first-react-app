@@ -4,6 +4,7 @@
                         background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
                         border-radius: 25px;
                         height: 100%;
+                        box-shadow: 30px 36px 34px 15px rgba(53, 49, 49, 0.4);
                     }
                     
                     .app-container {
@@ -27,6 +28,7 @@
                         margin-top: 10px;
                         color: #FA02F6;
                         font-weight: bold;
+                        text-shadow: 18px 8px 35px rgba(0, 0, 0, 0.4);
                     }
                     
                     .App h2 {
