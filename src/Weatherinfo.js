@@ -7,29 +7,30 @@ import FormattedDate from "./FormattedDate";
 
 export default function Weatherinfo(props) {
   return (
-    <div className="weather">
-      <div className="row">
-        <div className="col-6 icon-image">
-          <IconWeather code={props.data.icon} size={130} />
-        </div>
-        <div className="col-6">
-          <h1 className="city-name">{props.data.city}</h1>
-          <WeatherTemp temperature={props.data.temperature} />
+    <div className="WeatherInfo">
+      <h1>{props.data.city}</h1>
+      <ul>
+        <li>
+          <FormattedDate date={props.data.date} />
+        </li>
+        <li className="text-capitalize">{props.data.description}</li>
+      </ul>
+      <div className="row mt-3">
+        <div className="col-8">
+          <div className="clearfix">
+            <div className="float-left">
+              <IconWeather code={props.data.icon} size={200} />
+            </div>
 
+            <div className="float-left">
+              <WeatherTemp temperature={props.data.temperature} />
+            </div>
+          </div>
+        </div>
+        <div className="col-4">
           <ul>
-            <li>
-              <FormattedDate date={props.data.date} />
-            </li>
-            <li>
-              <span className="description"> {props.data.description}</span>
-            </li>
-            <li>
-              Humidity: <span className="humidity">{props.data.humidity}%</span>{" "}
-            </li>
-            <li>
-              Wind:
-              <span className="wind">{Math.round(props.data.wind)} km/h</span>
-            </li>
+            <li>Humidity: {props.data.humidity}%</li>
+            <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </div>
       </div>
